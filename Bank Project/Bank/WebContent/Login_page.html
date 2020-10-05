@@ -4,25 +4,16 @@
 <meta charset="ISO-8859-1">
 <title>BoT Registration Form</title>
 </head>
-<body>
+<body background-color:#fdf5f6>
 <form action="Customer_Data" method="post">
-   <style>
-     body {  
-      background-image: url('Images/BackGround.jpeg');  
-     background-repeat: no-repeat;  
-    background-attachment: fixed;  
-     background-size: 100% 100%; 
-     background-color:#ccffeb; 
-    } 
-    </style> 
-<!-- <div class="logo-print visible-print" aria-hidden="true">
+   <div class="logo-print visible-print" aria-hidden="true">
 	<img src="Images/BackGround.jpeg" 
 	width="170" height="150" alt="BoT Bank of Trust"></div>
 	<div class="BoT-header-nav-top-message">
-	</div>  -->
+	</div> 
   
       <div align="center">
-         <fieldset style="width:30%; background-color:#ccffeb">
+         <fieldset style="width:40%;">
             <h2 align="center">Registration form</h2><hr>
             <table>
                <tr>
@@ -33,41 +24,21 @@
                   <td>Last Name</td>
                   <td><input type="text" name="lName" required /></td>
                </tr>  
-               <!-- <tr>
-                  <td>Password</td>
-                  <td><input type="password" name="userPass" required /></td>
-               </tr>  
-               <tr>
-                  <td>Email Id</td>
-                  <td><input type="text" name="userEmail" required /></td>
-               </tr> -->  
                <tr>
                   <td>Mobile No.</td>
-                  <td><input type="text" name="Mobile" required/></td>
-               </tr>  
+                  <td><input type="tel" name="Mobile" pattern="[0-9]{10}" required></td>
+                  <td><small> Sample Format: 1234567890</small></td>
+                 </tr>  
                <tr>
                   <td>Date of Birth</td>
                   <td><input type="date" name="doB" required/></td>
                </tr>  
-               <tr>
+			   <tr>
                   <td>ID Proof</td>
-                  <td><input type="text" name="idProof" required/></td>
-               </tr> 
-               <!-- <tr>
-                  <td>Gender</td>
-                  <td><input type="radio" name="gender" value="male" checked> Male
-                  <input type="radio" name="gender" value="female"> Female </td></tr>
-               <tr>
-                  <td>Country</td>
-                  <td><select name="userCountry" style="width:130px">  
-                     <option>Select a country</option>  
-                     <option>India</option>  
-                     <option>America</option>  
-                     <option>England</option>  
-                     <option>other</option></select>
-                  </td>
-               </tr> -->
-               <tr>
+                  <td><input type="text" name="id_Proof" required/></td>
+               </tr>
+
+                   <tr>
                   <td><input type="reset" value="Reset"/></td>
                   <td><input type="submit" value="Register"/></td>
                </tr>
